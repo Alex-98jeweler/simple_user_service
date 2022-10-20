@@ -19,3 +19,4 @@ class User(Base):
     email = Column(String, unique=True)
     age = Column(String)
     job = Column(String)
+    test_field = Column(String)
