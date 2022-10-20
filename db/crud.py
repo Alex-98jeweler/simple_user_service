@@ -11,10 +11,6 @@ async def get_user_by_id(db: AsyncSession):
     result = await db.execute(select(models.User).order_by(models.User.id))
     data = result.fetchall()
     results = []
-    for i in data:
-        user = schemas.User.parse_obj(i["User"].__dict__)
-        results.append(user)
-        print(i["User"].__dict__)
     return results
 
 
