@@ -18,5 +18,3 @@ class User(Base):
     lastname = Column(String)
     email = Column(String, unique=True)
     age = Column(String)
-    job = Column(String)
-    test_field = Column(String)
