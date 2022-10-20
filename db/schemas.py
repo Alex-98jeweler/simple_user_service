@@ -5,7 +5,7 @@ class User(BaseModel):
     firstname: str
     lastname: str
     email: str
-    age: int
+    age: str
 
     class Config:
         orm_mode=True
